@@ -1,0 +1,98 @@
+/* ===== Body frame + SHSU right-side background (Req. 6, 7, 10) ===== */
+body{
+  width: 95%;
+  margin: 15px auto;
+  font-family: -apple-system, system-ui, Segoe UI, Roboto, Arial, sans-serif;
+  line-height: 1.45;
+  color: #1b1b1b;
+  background-color: #ffffff;
+
+  /* Place file at: images/shsu-logo.png */
+  background-image: url("../images/shsu-logo.png");
+  background-repeat: repeat-y;     /* vertical repeat */
+  background-position: right top;  /* right side */
+  background-attachment: fixed;    /* does not scroll */
+
+  /* border around page (Req. 10) */
+  border: 3px solid #2a58b5;
+  border-radius: 10px;
+}
+
+/* horizontal rules (Req. 10) */
+.rule-top,
+.rule-bottom{ height: 6px; background: #2a58b5; margin: 6px 0 12px; }
+
+/* layout wrapper */
+.wrap{ width: 100%; position: relative; }
+
+/* ===== Article (Req. 2, 8, 10) ===== */
+article{
+  width: 75%;
+  float: left;
+  padding: 0 1rem 2rem 1rem;
+
+  /* two columns & vertical dotted line (Req. 10) */
+  column-count: 2;
+  column-gap: 2rem;
+  column-rule: 3px dotted #2a58b5;
+}
+
+h1{ margin: .5rem 0 1rem; }
+h2{ margin: 1.25rem 0 .5rem; color: #1e3f99; }
+.toplink{ column-span: all; margin-top: 1rem; }
+
+/* First-letter style for each paragraph (Req. 2a) */
+.long::first-letter{
+  font-size: 2.4em;
+  font-weight: 700;
+  font-style: italic;
+  line-height: 1;
+  padding-right: .1em;
+  color: #1e3f99;
+}
+
+/* NASA image floats left so text wraps (Req. 3) */
+.figure{ float: left; margin: .25rem 1rem .75rem 0; break-inside: avoid; }
+.figure img{ display: block; border-radius: 10px; }
+
+/* ===== Aside: fixed and list styling (Req. 9) ===== */
+aside{
+  width: 20%;
+  position: fixed;      /* stay on screen */
+  right: 3%;
+  top: 180px;
+  background: #d9e6ff;
+  border: 2px solid #2a58b5;
+  border-radius: 6px;
+  padding: .75rem 1rem;
+  box-shadow: 2px 2px 0 0 #2a58b5;
+}
+
+/* list style types exactly as specified (Req. 9b) */
+aside ol{ list-style-type: upper-roman; margin: 0; padding-left: 1.1rem; }
+aside ul{ list-style-type: square; margin: .25rem 0 .25rem 1rem; padding-left: 1rem; }
+aside ol.alpha{ list-style-type: lower-alpha; margin: .25rem 0 .25rem 1.25rem; }
+
+/* ===== Top menu bar (Req. 1) ===== */
+.topnav ul{ list-style: none; margin: 0; padding: 0; background: #2a58b5; }
+.topnav li{ float: left; }
+.topnav a{
+  display: block;
+  padding: 12px 28px;
+  color: #fff;
+  font-weight: 700;
+  text-decoration: none;
+}
+.topnav a:hover,
+.topnav a:focus{ background: #173a8c; }
+.topnav a.active{ background: #0d2a6a; }
+.topnav::after{ content: ""; display: table; clear: both; }
+
+/* footer */
+footer{ text-align: center; padding: .75rem 0 1rem; }
+
+/* clearfix fallback */
+.wrap::after{ content:""; display: table; clear: both; }
+
+/* optional card look */
+.card{ box-shadow: 3px 3px 0 0 #2a58b5; }
