@@ -1,90 +1,156 @@
 <!doctype html>
-<html lang="zxx">
+<html lang="en">
 <head>
   <meta charset="utf-8" />
   <title>Research Project B — Exam</title>
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <!-- CSS path expects: styles/exam.css -->
-  <link rel="stylesheet" href="styles/exam.css" />
+  <!-- CSS is at the ROOT of your site -->
+  <link rel="stylesheet" href="/exam.css?v=7" />
 </head>
 <body id="top" class="card">
-  <!-- ===== Top navigation ===== -->
+
+  <!-- Top navigation -->
   <nav class="topnav" aria-label="Main">
     <ul>
-      <li><a href="index.html">Home</a></li>
-      <li><a href="project.html">Project A</a></li>
-      <li><a class="active" href="exam.html" aria-current="page">Project B</a></li>
+      <li><a href="/index.html">Home</a></li>
+      <li><a href="/project.html">Project A</a></li>
+      <li><a class="active" href="/exam.html" aria-current="page">Project B</a></li>
       <li><a href="#">About Us</a></li>
     </ul>
   </nav>
-  <!-- thick blue rule under the menu -->
+
+  <!-- thick blue rule under menu -->
   <div class="rule-top"></div>
+
   <main class="wrap">
-    <!-- ===== Two-column article (75%) with dotted divider ===== -->
+    <!-- Article (75%) in two columns with dotted rule -->
     <article>
       <h1>Research Project B</h1>
+
       <h2 id="intro">Introduction</h2>
-      <!-- NASA image floats left & links to nasa.gov so text wraps exactly like the screenshot -->
+      <!-- NASA image floats; ABSOLUTE path -->
       <a class="figure" href="https://www.nasa.gov" target="_blank" rel="noopener">
-        <img src="images/moon-mars.jpg" alt="NASA space image" width="220" height="220">
+        <img src="/images/moon-mars.jpg" alt="NASA space image" width="220" height="220">
       </a>
       <p class="long">
-        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quod porro molestiae excepturi, odio eum necessitatibus, iure,
-        accusantium a sit tempora quae nam quas culpa. Ipsam quidem mollitia animi, amet voluptate accusamus esse doloribus corrupti
-        consequuntur minima, aperiam vel magni nihil soluta ad pariatur adipisci aspernatur fuga eius quos possimus. Eos mollitia
-        doloremque ratione expedita tenetur necessitatibus vitae, fugiat id cum, quis dolore, nemo nesciunt labore facere quisquam.
-        Officiis obcaecati ullam cumque molestias modi animi tempora ducimus possimus eligendi itaque sequi, magni natus quo explicabo
-        laboriosam! Delectus illo repellendus officiis omnis quidem nemo minus perspiciatis, voluptatum reiciendis dolore molestias
-        porro suscipit possimus repellat eaque. Cumque commodi nihil tempora inventore repudiandae explicabo quo? Repellendus dolores
-        maxime neque cum nam ad veniam perspiciatis incidunt ratione possimus eum quisquam optio assumenda voluptate. Voluptate iste
-        debitis optio facilis magnam earum exercitationem nemo, nobis et voluptatum. Doloremque.
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur dictum, erat at feugiat efficitur, justo purus
+        bibendum nibh, ac tincidunt erat urna id elit. Integer suscipit sem nec tellus ornare, at egestas nibh dictum.
+        Suspendisse potenti. Donec posuere, nibh eget porttitor convallis, dolor erat mollis nibh, ac accumsan nisl leo
+        quis quam. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae; Integer
+        condimentum, nisi gravida sollicitudin varius, risus augue faucibus tortor, quis vulputate leo urna vel velit.
+        Aliquam erat volutpat. In vitae tellus id justo volutpat porta. Cras accumsan, arcu ac maximus luctus, diam arcu
+        tincidunt leo, sit amet tincidunt elit lorem eu tortor. Phasellus facilisis, orci id placerat pharetra, augue
+        felis ullamcorper lorem, sit amet euismod urna nibh non ligula. Morbi dapibus, ipsum eget condimentum auctor,
+        tellus eros volutpat sem, et congue lectus nibh vel odio. Vivamus ac vehicula neque. Nunc egestas massa id arcu
+        volutpat, a aliquet lectus dictum. Quisque rutrum interdum ultricies. Sed ut ex congue, tempor libero sit amet,
+        malesuada elit. Sed lacinia massa nec nibh consequat, sit amet ullamcorper tellus faucibus. Curabitur congue,
+        purus vitae consectetur sollicitudin, arcu nisl laoreet tellus, id feugiat elit risus et lorem. Vivamus at
+        porttitor risus, sit amet iaculis turpis. Proin quis magna ut lorem interdum sagittis. Aenean rhoncus risus
+        tempus, congue orci eget, bibendum est. Integer eget nisi nec odio sodales efficitur. Praesent id gravida nibh.
+        Pellentesque non efficitur justo. Mauris vitae sem a nunc pharetra consequat. Nullam rhoncus, augue ac
+        ullamcorper fermentum, orci magna porttitor odio, quis lobortis velit arcu at nunc. Integer venenatis nisl sed
+        mi lacinia, vel ultrices mi convallis. Proin at rhoncus mi. Quisque ac mi ac nunc convallis ultricies. Aenean
+        feugiat, quam quis fringilla maximus, nisl magna tristique nisi, in venenatis ipsum mauris in ipsum. Sed vel
+        sem sit amet diam laoreet laoreet. Etiam iaculis purus a lorem finibus, eu luctus eros blandit. Pellentesque
+        ut nunc ornare, aliquam lorem sit amet, hendrerit massa. Vestibulum ante ipsum primis in faucibus orci luctus et
+        ultrices posuere cubilia curae; Integer convallis odio nec lacus mattis, non scelerisque urna blandit.
       </p>
+
       <h2 id="method">Method</h2>
       <p class="long">
-        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Temporibus nostrum fuga velit ullam facilis perspiciatis cumque
-        ipsum quam possimus natus in vitae rem reiciendis numquam ab nulla maxime. Repellendus nemo minima similique porro dicta
-        deserunt hic ipsa perspiciatis! Quibusdam perspiciatis officiis culpa facere maxime perferendis ipsam suscipit a fugiat alias
-        sint. Totam non incidunt hic temporibus quasi amet pariatur tempora unde explicabo quos repudiandae ducimus beatae aliquid
-        dolor nihil, voluptate architecto vero? Blanditiis repellat rerum accusantium dicta eos debitis illum iure eveniet voluptatem
-        officia architecto dolorem dignissimos minima commodi quam omnis eaque aperiam voluptatum dolorum ducimus consectetur earum
-        atque nemo ratione.
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce aliquet, turpis vitae bibendum pulvinar, libero
+        nulla pulvinar nulla, non finibus sem metus ac urna. Vestibulum ante ipsum primis in faucibus orci luctus et
+        ultrices posuere cubilia curae; Curabitur eleifend rhoncus nibh, non mattis mauris pulvinar a. Nulla facilisi.
+        Curabitur ac pretium est. Pellentesque at diam eu lorem tristique rhoncus. Duis gravida fermentum eros, non
+        tempor nibh semper in. Proin a nisi a elit luctus fringilla. Pellentesque non nisi rhoncus, efficitur massa at,
+        viverra tortor. Vivamus in ante eu dui convallis congue. Morbi nec lacus sed lacus feugiat aliquam id et arcu.
+        In convallis, dui in blandit aliquam, augue libero cursus ligula, quis viverra orci nibh at massa. Integer sed
+        felis est. Phasellus malesuada ante vel urna condimentum, eget volutpat magna ullamcorper. Integer in ultrices
+        elit. Vestibulum pulvinar, tellus quis consequat consectetur, nisl massa dictum arcu, a fermentum nisi eros
+        vitae magna. Integer vulputate tincidunt orci quis efficitur. Sed magna neque, dictum id iaculis eget, congue in
+        metus. Nam faucibus, urna nec ultricies posuere, ex justo aliquam lectus, ac varius augue eros vel dolor. Sed
+        imperdiet metus id ligula ultrices, ut finibus diam aliquet. Sed id quam gravida, tincidunt odio nec, pulvinar
+        mi. Integer bibendum nibh ut lectus maximus, nec viverra nisl dapibus.
       </p>
+
       <h2 id="analysis">Analysis</h2>
       <p class="long">
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid a cupiditate tempore eum cumque quas consectetur amet
-        officia impedit! Sit fugiat dicta perspiciatis commodi odit totam quo voluptates consequuntur cumque facere eum maxime odio
-        iste ipsum saepe ad repellat numquam iusto! Odit sed deserunt velit, earum quaerat laudantium cumque pariatur ipsum dolorum
-        sit rem veritatis iusto. Laudantium minima omnis impedit in natus ullam consequuntur consequatur est totam dicta
-        exercitationem excepturi enim ducimus id cum incidunt libero iste reiciendis iusto aperiam deleniti consectetur.
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit. In non tristique libero. Aliquam facilisis, nisl quis
+        aliquam pharetra, dui arcu faucibus risus, id egestas velit nibh sed nulla. Proin tincidunt lectus eget lectus
+        consequat, a aliquam lorem lacinia. Donec pharetra ac neque ut lacinia. Aenean vitae lacus non velit posuere
+        tempus. In id ante lacinia, faucibus lorem eget, ultrices dui. Vestibulum ante ipsum primis in faucibus orci
+        luctus et ultrices posuere cubilia curae; Integer ac bibendum enim, ut hendrerit libero. Vestibulum eu congue
+        nibh. Cras quis lorem ut sem hendrerit interdum. Cras sed massa vehicula, vulputate magna nec, maximus ligula.
+        Vestibulum placerat ac justo et interdum. Pellentesque mattis, ex quis cursus pellentesque, urna arcu ultrices
+        nisl, sit amet varius lorem dui in ipsum. Etiam congue imperdiet risus, sit amet feugiat nunc interdum eget.
+        Maecenas vel metus id ante fringilla euismod. Integer rhoncus, augue non commodo auctor, elit nunc commodo
+        lacus, vitae tempor magna mauris id justo. Pellentesque luctus finibus ultricies. Vestibulum tempus vitae sem
+        sed congue. Pellentesque et pulvinar turpis, ac rutrum ipsum. Nullam non efficitur nisl.
       </p>
+
       <h2 id="measurement">Measurement</h2>
       <p class="long">
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Laudantium porro dignissimos facilis asperiores incidunt quasi
-        similique cupiditate sapiente perspiciatis nam quo dolorum repellat debitis cum. Tempore impedit nulla natus repellat
-        consequuntur molestias dolore ea optio alias illum, repudiandae dolores magni. Aperiam, soluta earum? Asperiores modi
-        ducimus molestias vero, culpa veritatis facilis deserunt tenetur odio laudantium commodi quidem numquam qui amet minus.
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris et augue a ex posuere lacinia. Donec feugiat
+        lorem non tempus consequat. Integer mattis justo sed sem tristique blandit. Cras condimentum, risus sed dictum
+        rhoncus, urna tortor imperdiet velit, nec sagittis lectus odio vitae justo. Etiam lobortis, arcu nec
+        condimentum luctus, elit urna accumsan velit, sed bibendum ante eros non mauris. Sed tincidunt, nibh ac
+        consectetur tincidunt, lectus leo interdum lacus, non maximus nisl augue eget ex. Maecenas bibendum tincidunt
+        finibus. Vestibulum non nibh at neque semper tempus. Maecenas eget viverra massa, sit amet tempor nisl. Sed
+        dapibus justo ac dui elementum aliquet. In at urna a massa aliquet fermentum. Nulla interdum tincidunt sem,
+        facilisis volutpat dolor volutpat sit amet. Sed semper, nibh vel varius aliquet, lacus ante pretium arcu, vel
+        euismod risus dui sed nisl. Sed posuere, mi non fringilla consequat, tellus tellus efficitur mauris, ac congue
+        augue nisl a nulla. Donec hendrerit volutpat mi vitae ultrices. Pellentesque habitant morbi tristique senectus
+        et netus et malesuada fames ac turpis egestas. Pellentesque ultrices tortor eu nunc gravida, at porttitor urna
+        scelerisque.
       </p>
+
       <h2 id="structure">Structure</h2>
       <p class="long">
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod porro molestiae excepturi odio eum necessitatibus iure
-        accusantium a sit tempora quae nam quas culpa. Ipsum quidem mollitia animi amet voluptate accusamus esse doloribus
-        corrupti consequuntur minima aperiam vel magni nihil soluta ad pariatur adipisci aspernatur fuga eius quos possimus.
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer non lacus sed ipsum consequat rutrum. Vivamus
+        rhoncus, augue vel iaculis blandit, sapien eros convallis felis, ut placerat quam felis ac arcu. Vestibulum
+        sodales a lacus non semper. Donec in tincidunt velit. Donec volutpat euismod ante quis bibendum. Sed interdum
+        pharetra sapien eget pellentesque. Cras euismod vehicula eros, ut vulputate massa faucibus id. Proin arcu
+        sapien, pulvinar id dapibus ac, mattis vitae quam. Integer eu augue ipsum. Aliquam venenatis dapibus dolor nec
+        convallis. Vestibulum et augue at lorem sollicitudin bibendum. Vivamus porta, quam nec dictum tincidunt, neque
+        felis egestas neque, id pellentesque augue purus nec augue. Mauris facilisis lobortis risus, sed lacinia odio
+        tempor id. Suspendisse potenti. Nulla luctus lacinia mauris, id convallis ex scelerisque non. Pellentesque
+        pulvinar urna nibh, id maximus nibh egestas vel. Donec luctus massa sit amet ligula euismod, quis ultrices arcu
+        bibendum. Maecenas vulputate laoreet risus non dignissim. Duis posuere, odio nec maximus accumsan, mi sapien
+        egestas turpis, ac efficitur odio nisl at enim.
       </p>
+
       <h2 id="results">Results</h2>
       <p class="long">
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi aliquid dolores molestias veniam unde sint amet
-        laudantium ratione distinctio obcaecati provident tempore. Ex voluptas pariatur dolores libero incidunt quos perspiciatis
-        eos aut id eaque cumque fuga, eligendi culpa dicta quas magnam velit ducimus expedita veritatis consequuntur quia.
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque id lectus ac diam cursus tristique at ut
+        velit. Vestibulum ornare est ac lorem sollicitudin, at fermentum velit pulvinar. Nulla vulputate, dolor id
+        efficitur finibus, risus lorem suscipit urna, vel maximus enim neque in nunc. Etiam a est non neque tincidunt
+        egestas. Quisque in erat ut mi auctor bibendum sit amet vel mauris. Duis et nisi semper, laoreet augue eu,
+        tempor augue. Curabitur iaculis mi a magna posuere interdum. Integer eget eros vitae nunc pulvinar dignissim.
+        Mauris commodo, dolor a condimentum mattis, ante justo tristique sem, at tempor libero lacus non augue. Proin
+        feugiat lacus et lorem congue, in volutpat nisl congue. Duis posuere ante sed sagittis volutpat. Donec vel
+        consequat augue. Nam ullamcorper, eros id pharetra iaculis, leo nisl sodales purus, quis accumsan magna justo
+        a justo. Integer sit amet mi luctus, accumsan mi eget, fermentum augue. Vestibulum consequat feugiat velit id
+        efficitur. Cras ut nulla non justo viverra varius vel eu mauris. Maecenas ac tortor arcu.
       </p>
+
       <h2 id="discussion">Discussion</h2>
       <p class="long">
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque quia minima dolorem consequuntur facilis consequatur distinctio
-        harum dignissimos ullam omnis a dolor, quo optio molestias totam quam natus ad modi, delectus dignissimos odio quasi doloribus
-        pariatur. A, excepturi commodi debitis laudantium suscipit repellendus dolor facilis voluptas.
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer feugiat sapien ac augue tempus malesuada.
+        Curabitur ullamcorper, neque eget varius sollicitudin, nibh urna varius sem, vitae facilisis ipsum sem eget
+        magna. Nunc non efficitur libero, non tempor sapien. Pellentesque molestie, nunc eget luctus hendrerit, quam
+        ante vehicula sem, vel fermentum justo nibh non lorem. Morbi a dui non nibh porta venenatis. Donec luctus
+        accumsan odio, id posuere nunc mattis sit amet. Aliquam bibendum mi nec lacus fermentum luctus. Vivamus diam
+        lectus, vehicula vitae pellentesque quis, egestas tincidunt augue. Duis sit amet sem augue. Vestibulum sit amet
+        pretium nunc. Integer ac justo ut sem finibus tempus. Aenean finibus ante nec leo pulvinar malesuada. Sed et
+        gravida ipsum. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae; Cras
+        finibus, massa id sagittis rhoncus, augue neque vulputate neque, at pharetra libero sem vitae velit. Maecenas
+        dapibus suscipit lectus, vitae maximus risus eleifend eget.
       </p>
+
       <p class="toplink"><a href="#top">Return to the top of the page</a></p>
     </article>
-    <!-- ===== Fixed aside (20%) with I/II/III & nested bullets exactly like screenshot ===== -->
+
+    <!-- Fixed aside (20%) with required list styles -->
     <aside aria-label="Contents">
       <ol>
         <li><a href="#intro">Introduction</a></li>
@@ -107,15 +173,17 @@
       <p class="toplink2"><a href="#top">Return to the top of the page</a></p>
     </aside>
   </main>
+
   <!-- thick blue rule above footer -->
   <div class="rule-bottom"></div>
+
   <footer>
     <p>© <span id="year">2025</span> <strong>Alyssa Hernandez</strong> ·
       <a href="https://www.linkedin.com/" target="_blank" rel="noopener">LinkedIn</a>
     </p>
   </footer>
+
   <script>
-    // current year in footer
     document.getElementById('year').textContent = new Date().getFullYear();
   </script>
 </body>
