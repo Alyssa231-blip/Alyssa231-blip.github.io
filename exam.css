@@ -7,8 +7,8 @@ body {
   color: #1b1b1b;
   background-color: #ffffff;
 
-  /* SHSU background image */
-  background-image: url("/images/SHSU%20IMAGE.png");
+  /* SHSU background image (make sure /images/shsu-logo.png exists) */
+  background-image: url("/images/shsu-logo.png");
   background-repeat: repeat-y;
   background-position: right top;
   background-attachment: fixed;
@@ -90,6 +90,7 @@ aside {
   border-radius: 6px;
   padding: 0.75rem 1rem;
   box-shadow: 2px 2px 0 0 #2a58b5;
+  z-index: 5;
 }
 
 aside ol {
@@ -110,36 +111,41 @@ aside ol.alpha {
   margin-top: 0.5rem;
 }
 
-/* ===== TOP NAVIGATION BAR ===== */
+/* ===== TOP NAVIGATION BAR (TABS STYLE) ===== */
+.topnav {
+  width: 100%;
+  background-color: #0d2a6a;                 /* deep blue strip behind tabs */
+  border-bottom: 4px solid #2a58b5;          /* thick line under the menu */
+  box-shadow: 0 4px 6px rgba(0,0,0,0.2);
+}
 .topnav ul {
   list-style: none;
   margin: 0;
   padding: 0;
-  background: #2a58b5;
-  border-radius: 8px 8px 0 0;
+  display: flex;                              /* lays out tabs in a row */
+  justify-content: flex-start;
 }
-.topnav li {
-  float: left;
-}
+.topnav li { margin: 0; }
 .topnav a {
   display: block;
-  padding: 12px 28px;
+  padding: 14px 32px;
   color: #ffffff;
   font-weight: 700;
   text-decoration: none;
-  border-right: 1px solid rgba(255, 255, 255, 0.25);
+  border-right: 1px solid rgba(255,255,255,0.25);
+  background: linear-gradient(to bottom, #3b63d1 0%, #0d2a6a 100%);  /* tab gradient */
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+  transition: all 0.25s ease;
 }
 .topnav a:hover,
 .topnav a:focus {
-  background: #173a8c;
+  background: linear-gradient(to bottom, #507cf3 0%, #163b9b 100%);
+  transform: translateY(-2px);
 }
 .topnav a.active {
-  background: #0d2a6a;
-}
-.topnav::after {
-  content: "";
-  display: table;
-  clear: both;
+  background: linear-gradient(to bottom, #173a8c 0%, #0d2a6a 100%);
+  box-shadow: inset 0 -3px 0 #ffffff;        /* thin white line like selected tab */
 }
 
 /* ===== FOOTER ===== */
@@ -149,20 +155,15 @@ footer {
   font-weight: 500;
   color: #1a3e9e;
 }
-
 footer a {
   color: #0d2a6a;
   text-decoration: none;
   font-weight: 600;
 }
-footer a:hover {
-  text-decoration: underline;
-}
+footer a:hover { text-decoration: underline; }
 
 /* ===== FIXED BOX SHADOW AROUND BODY ===== */
-.card {
-  box-shadow: 3px 3px 0 0 #2a58b5;
-}
+.card { box-shadow: 3px 3px 0 0 #2a58b5; }
 
 /* CLEAR FLOATS */
 .wrap::after {
