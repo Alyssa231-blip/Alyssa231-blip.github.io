@@ -6,21 +6,17 @@ body{
   line-height: 1.45;
   color: #1b1b1b;
   background-color: #ffffff;
-
   /* ABSOLUTE path to the SHSU image.
      If you renamed the file to shsu-logo.png, change the URL accordingly. */
   background-image: url("/images/SHSU%20IMAGE.png");
   background-repeat: repeat-y;
   background-position: right top;
   background-attachment: fixed;
-
   border: 3px solid #2a58b5;
   border-radius: 12px;
 }
-
 .rule-top,.rule-bottom{ height:6px; background:#2a58b5; margin:6px 0 12px; }
 .wrap{ width:100%; position:relative; }
-
 /* ===== Article (75%), two columns with dotted vertical rule ===== */
 article{
   width: 75%;
@@ -33,7 +29,6 @@ article{
 h1{ margin:.5rem 0 1rem; color:#1a3e9e; }
 h2{ margin:1.25rem 0 .5rem; color:#1a3e9e; }
 .toplink{ column-span: all; margin-top:1rem; }
-
 /* First letter big/bold/italic */
 .long::first-letter{
   font-size: 2.4em;
@@ -43,11 +38,9 @@ h2{ margin:1.25rem 0 .5rem; color:#1a3e9e; }
   padding-right: .1em;
   color: #1e3f99;
 }
-
 /* NASA image floats to wrap text */
 .figure{ float:left; margin:.25rem 1rem .75rem 0; }
 .figure img{ display:block; border-radius:10px; }
-
 /* ===== Fixed aside (20%) with styled lists ===== */
 aside{
   width:20%;
@@ -60,12 +53,10 @@ aside{
   padding:.75rem 1rem;
   box-shadow:2px 2px 0 0 #2a58b5;
 }
-
 aside ol{ list-style-type: upper-roman; margin:0; padding-left:1.1rem; }
 aside ul{ list-style-type: square; margin:.25rem 0 .25rem 1rem; padding-left:1rem; }
 aside ol.alpha{ list-style-type: lower-alpha; margin:.25rem 0 .25rem 1.25rem; }
 .toplink2{ margin-top:.5rem; }
-
 /* ===== Top nav ===== */
 .topnav ul{ list-style:none; margin:0; padding:0; background:#2a58b5; border-radius:8px 8px 0 0; }
 .topnav li{ float:left; }
