@@ -1,0 +1,121 @@
+/* base */
+html,
+body {
+  margin: 1em;
+  height: 100%;
+  font-size: 100%;
+}
+
+* {
+  font-family: Verdana, Arial, Helvetica, sans-serif;
+}
+
+/* ================= TABLE 1 ================= */
+table.first {
+  border-collapse: separate;
+  border: 2px solid black;
+}
+
+table.first th,
+table.first td {
+  border: 2px solid blue;
+}
+
+table.first tr:nth-child(odd) {
+  background-color: lightblue;
+}
+
+/* ================= TABLE 2 ================= */
+table.second {
+  border-collapse: collapse;
+  border: 2px solid purple;
+  caption-side: bottom;
+}
+
+table.second th {
+  background-color: salmon;
+}
+
+table.second th,
+table.second td {
+  padding: 0.7em;
+  vertical-align: middle;
+  border: 2px solid purple;
+}
+
+/* extra line under header row (like example) */
+table.second thead tr:first-child,
+table.second tr:first-child {
+  border-bottom: 2px solid purple;
+}
+
+/* ================= TABLE 3 ================= */
+
+table.third {
+  border-collapse: collapse;
+  margin-top: 2em;
+}
+
+/* first header row: green strip with top border */
+table.third thead tr:first-child {
+  background-color: #8ae68c;
+  border-top: 2px solid orangered;
+  border-left: 2px solid orangered;
+  border-right: 2px solid orangered;
+}
+
+table.third thead tr:first-child th {
+  padding: 0.4em 0.8em;
+  text-align: left;
+}
+
+/* second header row: darker green with full border */
+table.third thead tr:nth-child(2) {
+  background-color: #5ac858;
+  border-left: 2px solid orangered;
+  border-right: 2px solid orangered;
+}
+
+table.third thead tr:nth-child(2) th {
+  padding: 0.4em 0.8em;
+  border-top: 2px solid orangered;
+  border-bottom: 2px solid orangered;
+}
+
+/* body rows: side borders and inner lines */
+table.third tbody tr {
+  border-left: 2px solid orangered;
+  border-right: 2px solid orangered;
+}
+
+table.third tbody td {
+  padding: 0.4em 0.8em;
+  border-bottom: 1px solid orangered;
+  vertical-align: top;          /* numbers 1,2,3 stick to top */
+}
+
+/* last row has thick bottom border */
+table.third tbody tr:last-child td {
+  border-bottom: 2px solid orangered;
+}
+
+/* make Category column a little narrower */
+table.third td.number {
+  width: 3em;
+}
+
+/* ================== MEDIA QUERY ================== */
+/* exactly what the instructions ask for */
+
+@media only screen and (max-width: 425px) {
+  th,
+  td {
+    display: block;
+  }
+
+  thead,
+  td.number {
+    display: none;
+    padding: 0;
+  }
+}
