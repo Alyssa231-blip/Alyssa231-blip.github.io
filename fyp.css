@@ -44,6 +44,8 @@ body {
   background: none;
   cursor: pointer;
   box-shadow: 0 18px 40px rgba(0,0,0,.45);
+  z-index: 3;
+  position: relative;
 }
 
 .center-photo img {
@@ -53,13 +55,13 @@ body {
   object-fit: cover;
 }
 
-/* Envelopes */
 .envelope {
   position: absolute;
   background: none;
   border: none;
   cursor: pointer;
   text-align: center;
+  z-index: 2;
 }
 
 .envelope img {
@@ -75,10 +77,10 @@ body {
   text-shadow: 0 6px 20px rgba(0,0,0,.6);
 }
 
-.env-top    { top: 14%; left: 50%; transform: translateX(-50%); }
-.env-right  { right: 4%; top: 50%; transform: translateY(-50%); }
-.env-bottom { bottom: 10%; left: 50%; transform: translateX(-50%); }
-.env-left   { left: 4%; top: 50%; transform: translateY(-50%); }
+.env-top    { top: 10%; left: 50%; transform: translateX(-50%); }
+.env-right  { right: 2%; top: 50%; transform: translateY(-50%); }
+.env-bottom { bottom: 6%; left: 50%; transform: translateX(-50%); }
+.env-left   { left: 2%; top: 50%; transform: translateY(-50%); }
 
 /* ---------- LETTER OVERLAY ---------- */
 .overlay {
