@@ -1,0 +1,169 @@
+* { box-sizing: border-box; }
+html, body { margin: 0; height: 100%; }
+
+body{
+  font-family: system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif;
+  color:#fff;
+  background: url("images/bg-main.png") center/cover no-repeat fixed;
+}
+
+/* Top title */
+.title-bar{
+  position: sticky;
+  top: 0;
+  padding: 18px 12px;
+  text-align: center;
+  z-index: 5;
+}
+.title-bar h1{
+  margin: 0;
+  font-size: clamp(22px, 3vw, 34px);
+  text-shadow: 0 10px 28px rgba(0,0,0,.7);
+}
+
+/* Main scene */
+.scene{
+  height: calc(100vh - 76px);
+  display: grid;
+  place-items: center;
+  padding: 10px 0 30px;
+}
+
+/* Ring container keeps everything perfectly centered */
+.ring{
+  --radius: 260px;            /* distance from center */
+  --envW: 170px;              /* envelope image width */
+  position: relative;
+  width: min(920px, 94vw);
+  height: min(620px, 78vh);
+  display: grid;
+  place-items: center;
+}
+
+/* Center circle */
+.center{
+  width: 240px;
+  height: 240px;
+  border-radius: 50%;
+  border: 2px solid rgba(255,255,255,.45);
+  background: transparent;
+  cursor: pointer;
+  box-shadow: 0 18px 45px rgba(0,0,0,.55);
+  z-index: 3;
+}
+.center img{
+  width:100%;
+  height:100%;
+  border-radius: 50%;
+  object-fit: cover;
+  display:block;
+}
+
+/* Envelope node (label + button) */
+.node{
+  position: absolute;
+  display: grid;
+  place-items: center;
+  gap: 10px;                 /* space between label and envelope */
+  width: min(320px, 90vw);
+  z-index: 2;
+}
+
+/* LABELS — readable, centered, always above envelope */
+.label{
+  font-size: 14px;
+  line-height: 1.25;
+  text-align: center;
+  padding: 8px 10px;
+  border-radius: 999px;
+  background: rgba(0,0,0,.45);
+  border: 1px solid rgba(255,255,255,.18);
+  backdrop-filter: blur(2px);
+  text-shadow: 0 10px 20px rgba(0,0,0,.8);
+}
+
+/* Envelope button/image */
+.envelope{
+  background: transparent;
+  border: none;
+  padding: 0;
+  cursor: pointer;
+}
+.envelope img{
+  width: var(--envW);
+  height: auto;
+  display:block;
+  filter: drop-shadow(0 14px 22px rgba(0,0,0,.55));
+}
+
+/* Place nodes evenly around the center using the radius */
+.top    { left: 50%; top: 50%; transform: translate(-50%, -50%) translateY(calc(-1 * var(--radius))); }
+.right  { left: 50%; top: 50%; transform: translate(-50%, -50%) translateX(var(--radius)); }
+.bottom { left: 50%; top: 50%; transform: translate(-50%, -50%) translateY(var(--radius)); }
+.left   { left: 50%; top: 50%; transform: translate(-50%, -50%) translateX(calc(-1 * var(--radius))); }
+
+/* Responsive tuning */
+@media (max-width: 900px){
+  .ring{ --radius: 220px; --envW: 155px; height: min(600px, 76vh); }
+  .center{ width: 220px; height: 220px; }
+}
+@media (max-width: 650px){
+  .ring{ --radius: 170px; --envW: 140px; height: min(560px, 74vh); }
+  .center{ width: 200px; height: 200px; }
+  .label{ font-size: 13px; padding: 7px 9px; }
+}
+
+/* ---------- MODAL (letter overlay) ---------- */
+.modal{
+  position: fixed;
+  inset: 0;
+  display: none;
+  place-items: center;
+  padding: 18px;
+  background: url("images/bg-letters.png") center/cover no-repeat fixed;
+  z-index: 50;
+}
+.modal::before{
+  content:"";
+  position:absolute;
+  inset:0;
+  background: rgba(0,0,0,.65);
+  backdrop-filter: blur(2px);
+}
+.card{
+  position: relative;
+  width: min(760px, 94vw);
+  max-height: 82vh;
+  overflow: auto;
+  border-radius: 22px;
+  background: rgba(0,0,0,.55);
+  border: 1px solid rgba(255,255,255,.18);
+  box-shadow: 0 22px 60px rgba(0,0,0,.65);
+  padding: 18px 18px 16px;
+  z-index: 1;
+}
+.card h2{
+  margin: 0 40px 10px 0;
+  font-size: 26px;
+  text-shadow: 0 10px 20px rgba(0,0,0,.8);
+}
+.card-body{
+  padding: 6px 2px 0;
+}
+.card p{
+  margin: 0;
+  white-space: pre-wrap;
+  line-height: 1.75;
+  font-size: 16px;
+}
+
+.close{
+  position: absolute;
+  top: 12px;
+  right: 12px;
+  background: transparent;
+  border: none;
+  color: #fff;
+  font-size: 22px;
+  cursor: pointer;
+}
