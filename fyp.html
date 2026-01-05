@@ -1,0 +1,56 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>For You ❤️</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="fyp.css">
+</head>
+<body class="page-one">
+
+  <header class="topbar">
+    <h1>To my beautiful girlfriend</h1>
+  </header>
+
+  <main class="stage">
+
+    <!-- Center Circle -->
+    <button class="center-photo" id="centerBtn">
+      <img src="images/center.png" alt="Us">
+    </button>
+
+    <!-- Envelopes -->
+    <button class="envelope env-top" data-key="one">
+      <img src="images/envelope.png">
+      <span>8 Billion hearts and none are like yours</span>
+    </button>
+
+    <button class="envelope env-right" data-key="two">
+      <img src="images/envelope.png">
+      <span>Your beauty can't be matched</span>
+    </button>
+
+    <button class="envelope env-bottom" data-key="three">
+      <img src="images/envelope.png">
+      <span>Lucky to be yours</span>
+    </button>
+
+    <button class="envelope env-left" data-key="four">
+      <img src="images/envelope.png">
+      <span>Who I want to be for You</span>
+    </button>
+
+  </main>
+
+  <!-- Letter Overlay -->
+  <div class="overlay" id="overlay">
+    <div class="letter-box">
+      <button class="close" id="closeBtn">✕</button>
+      <h2 id="letterTitle"></h2>
+      <p id="letterText"></p>
+    </div>
+  </div>
+
+  <script src="fyp.js"></script>
+</body>
+</html>
